@@ -3,13 +3,13 @@ import { CheckIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
   return (
-    <main className="flex h-screen flex-col items-center p-24  text-white overflow-hidden">
+    <main className="flex lg:h-screen flex-col items-center p-24 text-white overflow-hidden">
       <h1 className="text-4xl font-bold text-center mb-16">
         Kortex Notes Explorer ~ Sebastian M.
       </h1>
 
-      <section className="flex items-center w-full justify-evenly">
-        <div className="w-96 flex flex-col gap-8 rounded-xl p-4 shadow shadow-kortex-purple text-white">
+      <section className="flex flex-col md:flex-row items-center w-full justify-evenly gap-8">
+        <div className="w-96 flex-col gap-8 rounded-xl p-4 shadow shadow-kortex-purple text-white max-w-xs  lg:max-w-none">
           <div>
             <h3 className="text-3xl font-semibold mb-3">Main Requirements</h3>
             <ul className="flex flex-col gap-y-2">
