@@ -113,13 +113,13 @@ export default function ContextMenu({
 
   return (
     <>
-      <div className="flex justify-end px-4 z-50">
+      <div className="flex justify-end px-4 text-white">
         <Cross1Icon onClick={() => setContextMenuUuid("")} />
       </div>
       <div className="p-2 bg-neutral-950 flex flex-col gap-1">
         {contextMenu.map((item) => (
           <div
-            className="flex items-center gap-2 justify-between bg-opacity-75 bg-black px-2 py-1 rounded-lg"
+            className="flex items-center gap-2 justify-between bg-opacity-75 bg-black px-2 py-1 rounded-lg text-white"
             onClick={item.handleClick}
             key={item.label}
           >
@@ -131,7 +131,7 @@ export default function ContextMenu({
                   value={newTitle}
                   onChange={handleInputChange}
                   onKeyDown={handleKeyDown}
-                  className="focus:border-0 focus:outline-none rounded-lg px-2 w-full"
+                  className="focus:border-0 focus:outline-none rounded-lg px-2 w-full bg-gray-700 text-white"
                 />
                 <CheckIcon
                   onClick={() => renameDocument(currDocument, newTitle)}
