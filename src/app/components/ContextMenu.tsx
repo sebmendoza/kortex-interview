@@ -121,6 +121,7 @@ export default function ContextMenu({
           <div
             className="flex items-center gap-2 justify-between bg-opacity-75 bg-black px-2 py-1 rounded-lg"
             onClick={item.handleClick}
+            key={item.label}
           >
             {startRenaming && item.label == "Rename" ? (
               <>
